@@ -5,9 +5,9 @@
 }
 
 :root {
-    --bg-color: #fdc;
+    --bg-color: #aaa;
     --theme-color: #123;
-    --header-height: 100px;
+    --header-height: 15vh;
 }
 
 body {
@@ -17,49 +17,85 @@ body {
 /* nav */
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
-}
-
-.wrapper {
+    width: 100%;
     height: var(--header-height);
+    padding: 0 3rem;
     background-color: #111;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
 nav {
-    height: 100%;
-}
-
-nav ul li {
-    list-style: none;
     height: 80%;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
+    height: 80px;
 }
 
-nav ul li a i {
-    height: 100%;
+i {
     color: var(--theme-color);
+    height: 80%;
+    font-size: 80%;    
 }
 
 main {
-    margin-top: var(--header-height);
+    margin: var(--header-height) 0;
     background-color: var(--bg-color);
 }
 
 .bg-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     overflow: hidden;
+    object-fit: cover;
     width: 100%;
-    height: 60%;    
+    height: 85vh;
+}
+
+.bg-wrapper h1,
+.bg-wrapper h2,
+.bg-wrapper input {
+    position: absolute;
+}
+
+.bg-wrapper h1,
+.bg-wrapper h2 {
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #fff;
+}
+
+.bg-wrapper h1 {
+    top: 10px;
+    font-size: 5rem;
+    line-height: 7rem;
+}
+
+.bg-wrapper input {
+    width: 300px;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 0 1rem;
+}
+
+.bg-wrapper input:active {
+    border: 0;
+}
+
+.bg-wrapper h2 {
+    top: 10rem;
 }
 
 #bg-img {
-    /* object-fit: cover; */
     width: 100%;
 }
+
+/* recept section */
+
