@@ -18,13 +18,13 @@ body {
 /* nav */
 
 header {
+    display: flex;
     position: fixed;
     top: 0;
     width: 100%;
     height: var(--header-height);
     padding: 0 3rem;
     background-color: #111;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
@@ -35,17 +35,25 @@ nav {
     width: 100%;
 }
 
+header a,
 nav a {
+    display: inline-block;
     text-decoration: none;
     height: 100%;
-    width: 80px;
+    width: 12vh;
+    background: #fff;
 }
 
-header i,
-nav a i {
+.logo {
+    display: block;
     color: var(--theme-color);
     height: 80%;
-    font-size: 80%;    
+}
+
+.icon {
+    display: block;
+    color: var(--theme-color);
+    height: 100%;
 }
 
 main {
