@@ -32,14 +32,17 @@ header {
 
 nav {
     height: 80%;
+    width: 100%;
 }
 
 nav a {
     text-decoration: none;
-    height: 80px;
+    height: 100%;
+    width: 80px;
 }
 
-i {
+header i,
+nav a i {
     color: var(--theme-color);
     height: 80%;
     font-size: 80%;    
@@ -53,7 +56,6 @@ main {
 .bg-wrapper {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     position: relative;
     overflow: hidden;
