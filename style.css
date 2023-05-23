@@ -72,17 +72,41 @@ main {
     font-size: 5rem;
 }
 
-#banner > input {
+#search-container {
+    display: flex;
     width: 100%;
     max-width: 500px;
+}
+
+#search-container > input {
+    width: 100%;
     height: 2rem;
-    border-radius: 1rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
     padding: 0 1rem;
     font-size: 1rem;
 }
 
-#banner > input:focus {
+#search-container > input:focus {
     outline: none;
+}
+
+#search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 2rem;
+    background-color: #000;
+    border: none;
+    border-left: 1px solid #000;
+    border-radius: 0 1rem 1rem 0;
+}
+
+#search-btn > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
 }
 
 #bg-img {
@@ -148,10 +172,6 @@ main {
 
 .food-container:not(:last-child) {
     margin-bottom: 3rem;
-}
-
-.hide {
-    display: none;
 }
 
 /* footer */

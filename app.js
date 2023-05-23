@@ -3,11 +3,40 @@ const homeMadeRecipeContainer = document.getElementById('home-made-recipe-contai
 const randomRecipesContainer = document.getElementById('random-recipe-container');
 const beerRecipeContainer = document.getElementById('beer-recipe-container');
 const searchBar = document.getElementById('search-bar');
+const searchBtn = document.getElementById('search-btn');
 
 
 
 searchBar.addEventListener('keydown', e => {
     if (searchBar.focus && searchBar.value !== '' && e.key === 'Enter') {
+        fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            recipeSection.innerHTML = '';
+
+            let title = document.createElement('h2');
+            title.style.fontSize = '3rem';
+            title.innerText = 'Search Result';
+
+            let searchContainer = document.createElement('div');
+            searchContainer.classList.add('food-container');
+
+            recipeSection.append(title, searchContainer);
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].meal.toLowerCase() == searchBar.value.toLowerCase()) {
+                    createCustomRecipe(data[i], searchContainer);
+                }
+            }
+            searchBar.value = '';
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        });
+    }
+})
+
+searchBtn.addEventListener('click', e => {
+    if (searchBar.value !== '') {
         fetch('data.json')
         .then(response => response.json())
         .then(data => {
