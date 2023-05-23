@@ -1,8 +1,38 @@
+const recipeSection = document.getElementById('recipe-section');
 const homeMadeRecipeContainer = document.getElementById('home-made-recipe-container');
 const randomRecipesContainer = document.getElementById('random-recipe-container');
 const beerRecipeContainer = document.getElementById('beer-recipe-container');
+const searchBar = document.getElementById('search-bar');
 
 
+
+searchBar.addEventListener('keydown', e => {
+    if (searchBar.focus && searchBar.value !== '' && e.key === 'Enter') {
+        fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            recipeSection.innerHTML = '';
+
+            let title = document.createElement('h2');
+            title.style.fontSize = '3rem';
+            title.innerText = 'Search Result';
+
+            let searchContainer = document.createElement('div');
+            searchContainer.classList.add('food-container');
+
+            recipeSection.append(title, searchContainer);
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].meal.toLowerCase() == searchBar.value.toLowerCase()) {
+                    createCustomRecipe(data[i], searchContainer);
+                }
+            }
+            searchBar.value = '';
+        })
+        .catch(error => {
+            console.log('Error:', error);
+        });
+    }
+})
 
 fetch('data.json')
 .then(response => response.json())
@@ -14,8 +44,6 @@ fetch('data.json')
 .catch(error => {
     console.log('Error:', error);
 });
-
-
 
 const foodUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
 
@@ -30,8 +58,6 @@ for(let i = 1; i <= 10; i++) {
         console.log('Error:', error);
     });
 }
-
-
 
 const beerUrl = 'https://api.punkapi.com/v2/beers/';
 
@@ -108,4 +134,8 @@ function createBeerRecipe(data, container) {
     description.classList.add('dish-description');
 
     beerContainer.append(img, title, description);
+}
+
+function capitalize(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }

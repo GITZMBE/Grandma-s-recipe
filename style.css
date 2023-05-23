@@ -18,6 +18,13 @@ html {
     min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+p {
+    cursor: default;
+}
+
 /* nav */
 
 header {
@@ -52,6 +59,7 @@ main {
     background-repeat: no-repeat;
     max-width: 100%;
     height: 90vh;
+    padding: 0 10vw;
 }
 
 #banner > h1,
@@ -65,7 +73,8 @@ main {
 }
 
 #banner > input {
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
     height: 2rem;
     border-radius: 1rem;
     padding: 0 1rem;
@@ -94,7 +103,8 @@ main {
 
 #beer-recipe-container,
 #home-made-recipe-container,
-#random-recipe-container {
+#random-recipe-container,
+.food-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, var(--recipe-size));
     grid-template-rows: var(--recipe-size);
@@ -140,6 +150,10 @@ main {
     margin-bottom: 3rem;
 }
 
+.hide {
+    display: none;
+}
+
 /* footer */
 
 footer {
@@ -160,4 +174,16 @@ footer svg {
 
 footer svg:hover {
     fill: #fff;
+}
+
+@media screen and (max-width: 580px) {
+    #banner > h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #recipe-section {
+        padding: 0 10px;
+    }
 }
