@@ -4,70 +4,60 @@ const randomRecipesContainer = document.getElementById('random-recipe-container'
 const beerRecipeContainer = document.getElementById('beer-recipe-container');
 const searchBar = document.getElementById('search-bar');
 const searchBtn = document.getElementById('search-btn');
+const searchTitle = document.getElementById('search-title');
+const searchContainer = document.getElementById('searched-container');
 
-
-
-searchBar.addEventListener('keydown', e => {
-    if (searchBar.focus && searchBar.value !== '' && e.key === 'Enter') {
-        fetch('data.json')
+searchBar.addEventListener('input', e => {
+    fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            recipeSection.innerHTML = '';
-
-            let title = document.createElement('h2');
-            title.style.fontSize = '3rem';
-            title.innerText = 'Search Result';
-
-            let searchContainer = document.createElement('div');
-            searchContainer.classList.add('food-container');
-
-            recipeSection.append(title, searchContainer);
-            for (let i = 0; i < data.length; i++) {
-                if (data[i].meal.toLowerCase() == searchBar.value.toLowerCase()) {
-                    createCustomRecipe(data[i], searchContainer);
+            if (searchBar.focus && searchBar.value !== '') {
+                searchContainer.innerHTML = '';
+                searchTitle.classList.add('hide');
+                searchContainer.classList.add('hide');
+                for (const key in data) {
+                    const element = data[key];
+                    if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
+                        searchTitle.classList.remove('hide');
+                        searchContainer.classList.remove('hide');
+                        createCustomRecipe(element, searchContainer);
+                    }
                 }
             }
-            searchBar.value = '';
         })
         .catch(error => {
             console.log('Error:', error);
         });
-    }
 })
 
 searchBtn.addEventListener('click', e => {
-    if (searchBar.value !== '') {
-        fetch('data.json')
+    fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            recipeSection.innerHTML = '';
-
-            let title = document.createElement('h2');
-            title.style.fontSize = '3rem';
-            title.innerText = 'Search Result';
-
-            let searchContainer = document.createElement('div');
-            searchContainer.classList.add('food-container');
-
-            recipeSection.append(title, searchContainer);
-            for (let i = 0; i < data.length; i++) {
-                if (data[i].meal.toLowerCase() == searchBar.value.toLowerCase()) {
-                    createCustomRecipe(data[i], searchContainer);
+            if (searchBar.focus && searchBar.value !== '') {
+                searchContainer.innerHTML = '';
+                searchTitle.classList.add('hide');
+                searchContainer.classList.add('hide');
+                for (const key in data) {
+                    const element = data[key];
+                    if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
+                        searchTitle.classList.remove('hide');
+                        searchContainer.classList.remove('hide');
+                        createCustomRecipe(element, searchContainer);
+                    }
                 }
             }
-            searchBar.value = '';
         })
         .catch(error => {
             console.log('Error:', error);
         });
-    }
 })
 
 fetch('data.json')
 .then(response => response.json())
 .then(data => {
-    for(let i = 0; i < data.length; i++) {
-        createCustomRecipe(data[i], homeMadeRecipeContainer);
+    for(const element in data) {
+        createCustomRecipe(data[element], homeMadeRecipeContainer);
     }
 })
 .catch(error => {
@@ -102,11 +92,9 @@ for(let i = 1; i <= 30; i++) {
     });
 }
 
-
-
 function createCustomRecipe(data, container) {
     let mealContainer = document.createElement('div');
-    mealContainer.classList.add('beer-recipe-container');
+    mealContainer.classList.add('recipe-container');
     container.append(mealContainer);
 
     let img = document.createElement('img');
@@ -126,7 +114,7 @@ function createCustomRecipe(data, container) {
 
 function createMealRecipe(data, container) {
     let mealContainer = document.createElement('div');
-    mealContainer.classList.add('beer-recipe-container');
+    mealContainer.classList.add('recipe-container');
     container.append(mealContainer);
 
     let img = document.createElement('img');

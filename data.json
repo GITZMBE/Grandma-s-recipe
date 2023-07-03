@@ -18,6 +18,5 @@
         "meal": "Hamburger",
         "description": "Hamburger with cheese",
         "image": "https://source.unsplash.com/random/1920x1080/?"
-    },
-    "length": 4
+    }
 } 

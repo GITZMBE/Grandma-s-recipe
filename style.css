@@ -5,6 +5,10 @@
     font-family: Bebas Neue;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 :root {
     --bg-color: #aaa;
     --theme-color: #123;
@@ -65,11 +69,15 @@ main {
 #banner > h1,
 #banner > h2 {
     text-shadow: 1px 1px #fff;
+    letter-spacing: .5rem;
 }
 
 #banner > h1 {
-    letter-spacing: 3px;
     font-size: 5rem;
+}
+
+#banner > h2 {
+    font-size: 3rem;
 }
 
 #search-container {
@@ -115,6 +123,12 @@ main {
 
 /* recept section */
 
+.hide {
+    display: none;
+    height: 0;
+    margin: 0 !important; 
+}
+
 #recipe-section {
     display: grid;
     gap: 1rem;
@@ -137,7 +151,9 @@ main {
     width: 100%;
 }
 
-.beer-recipe-container {
+
+.beer-recipe-container,
+.recipe-container {
     display: flex;
     flex-direction: column;
     align-items: center;
