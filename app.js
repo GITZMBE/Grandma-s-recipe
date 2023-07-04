@@ -164,3 +164,9 @@ function createBeerRecipe(data, container) {
 function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+document.querySelector('header').innerText = window.innerWidth;
+window.addEventListener('resize', e => {
+    document.querySelector('header').innerText = window.innerWidth;
+})
+
