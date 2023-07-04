@@ -211,6 +211,17 @@ main {
     margin-bottom: 3rem;
 }
 
+#beer-btn,
+#random-btn {
+    justify-self: center;
+    width: fit-content;
+    min-width: 8rem;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    border: none;
+}
+
 /* footer */
 
 footer {
@@ -245,7 +256,7 @@ footer svg:hover {
     }
 
     #recipe-section {
-        padding: 0 10px;
+        padding: 1rem;
     }
 }
 
@@ -258,7 +269,7 @@ footer svg:hover {
         font-size: 2rem;
     }
 
-    .dish-img {
+    .dish-img:not(.beer-recipe-container > .dish-img) {
         width: 100%;
         height: 155px;
         object-fit: cover;
