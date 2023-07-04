@@ -7,93 +7,59 @@ const searchBtn = document.getElementById('search-btn');
 const searchTitle = document.getElementById('search-title');
 const searchContainer = document.getElementById('searched-container');
 
-searchBar.addEventListener('input', e => {
+searchBar.addEventListener('input', findSearch);
+
+searchBar.addEventListener('focus', () => {
+    document.addEventListener('keypress', e => {
+        if (e.key === 'Enter' && document.activeElement === searchBar) {
+            scrollDown();
+        } 
+    })
+});
+
+searchBtn.addEventListener('click', scrollDown);
+
+function findSearch() {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
             if (searchBar.focus && searchBar.value !== '') {
                 searchContainer.innerHTML = '';
-                searchTitle.classList.add('hide');
-                searchContainer.classList.add('hide');
-                for (const key in data) {
-                    const element = data[key];
-                    if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
-                        searchContainer.style.gridTemplateColumns = 'repeat(auto-fill, var(--recipe-size))';
-                        searchTitle.classList.remove('hide');
-                        searchContainer.classList.remove('hide');
-                        createCustomRecipe(element, searchContainer);
-                    }
-                }
-            }
-        })
-        .catch(error => {
-            console.log('Error:', error);
-        });
-})
-
-window.addEventListener('keypress', e => {
-    if (e.key === 'Enter') {
-        fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            if (searchBar.focus && searchBar.value !== '') {
                 let searchResult = false;
                 for (const key in data) {
                     const element = data[key];
                     if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
                         searchResult = true;
-                        window.scrollTo({
-                            top: recipeSection.offsetTop
-                        })
+                        searchContainer.style.gridTemplateColumns = 'repeat(auto-fill, var(--recipe-size))';
+                        searchTitle.classList.remove('hide');
+                        searchContainer.classList.remove('hide');
+                        createCustomRecipe(element, searchContainer);
                     } else if (!searchResult && key == Object.keys(data).length - 1) {
                         searchContainer.style.gridTemplateColumns = 'repeat(var(--recipe-size))';
                         searchContainer.innerHTML = '<img id="no-result-img" src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png">No Results Found';
                         // searchContainer.style.minHeight = '100vh';
                         searchTitle.classList.remove('hide');
                         searchContainer.classList.remove('hide');
-                        window.scrollTo({
-                            top: recipeSection.offsetTop
-                        })
+                        
                     }
                 }
+            } else if (searchBar.value === '') {
+                searchContainer.innerHTML = '';
+                searchTitle.classList.add('hide');
+                searchContainer.classList.add('hide');                
             }
         })
         .catch(error => {
             console.log('Error:', error);
         });
-    } 
-})
+}
 
-searchBtn.addEventListener('click', e => {
-    fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-        if (searchBar.focus && searchBar.value !== '') {
-            let searchResult = false;
-            for (const key in data) {
-                const element = data[key];
-                if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
-                    searchResult = true;
-                    window.scrollTo({
-                        top: recipeSection.offsetTop
-                    })
-                } else if (!searchResult && key == Object.keys(data).length - 1) {
-                    searchContainer.style.gridTemplateColumns = 'repeat(var(--recipe-size))';
-                    searchContainer.innerHTML = '<img id="no-result-img" src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png">No Results Found';
-                    // searchContainer.style.minHeight = '100vh';
-                    searchTitle.classList.remove('hide');
-                    searchContainer.classList.remove('hide');
-                    window.scrollTo({
-                        top: recipeSection.offsetTop
-                    })
-                }
-            }
-        }
-    })
-    .catch(error => {
-        console.log('Error:', error);
-    });
-})
+function scrollDown() {
+    window.scrollTo({
+        top: recipeSection.offsetTop,
+        behavior: 'smooth'
+    })    
+};
 
 fetch('data.json')
 .then(response => response.json())
