@@ -20,6 +20,7 @@ body,
 html {
     width: 100%;
     min-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -103,8 +104,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
+    width: 2rem;
     height: 2rem;
+    padding: .375rem;
     background-color: #000;
     border: none;
     border-left: 1px solid #000;
@@ -129,10 +131,20 @@ main {
     margin: 0 !important; 
 }
 
+#searched-container {
+    display: grid;
+    /* grid-template-columns: repeat(var(--recipe-size)); */
+    font-size: 3rem;
+}
+
+#no-result-img {
+    height: 250px;
+}
+
 #recipe-section {
     display: grid;
     gap: 1rem;
-    padding: 100px 3rem;
+    padding: 3rem;
 }
 
 #recipe-section > h2 {
@@ -160,6 +172,7 @@ main {
     width: var(--recipe-size);
     height: var(--recipe-size);
     background-color: #fff;
+    font-size: 1rem !important;
     padding: .5rem;
     overflow: hidden;
 }

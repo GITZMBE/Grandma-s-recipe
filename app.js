@@ -18,6 +18,7 @@ searchBar.addEventListener('input', e => {
                 for (const key in data) {
                     const element = data[key];
                     if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
+                        searchContainer.style.gridTemplateColumns = 'repeat(auto-fill, var(--recipe-size))';
                         searchTitle.classList.remove('hide');
                         searchContainer.classList.remove('hide');
                         createCustomRecipe(element, searchContainer);
@@ -30,20 +31,29 @@ searchBar.addEventListener('input', e => {
         });
 })
 
-searchBtn.addEventListener('click', e => {
-    fetch('data.json')
+window.addEventListener('keypress', e => {
+    if (e.key === 'Enter') {
+        fetch('data.json')
         .then(response => response.json())
         .then(data => {
             if (searchBar.focus && searchBar.value !== '') {
-                searchContainer.innerHTML = '';
-                searchTitle.classList.add('hide');
-                searchContainer.classList.add('hide');
+                let searchResult = false;
                 for (const key in data) {
                     const element = data[key];
                     if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
+                        searchResult = true;
+                        window.scrollTo({
+                            top: recipeSection.offsetTop
+                        })
+                    } else if (!searchResult && key == Object.keys(data).length - 1) {
+                        searchContainer.style.gridTemplateColumns = 'repeat(var(--recipe-size))';
+                        searchContainer.innerHTML = '<img id="no-result-img" src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png">No Results Found';
+                        // searchContainer.style.minHeight = '100vh';
                         searchTitle.classList.remove('hide');
                         searchContainer.classList.remove('hide');
-                        createCustomRecipe(element, searchContainer);
+                        window.scrollTo({
+                            top: recipeSection.offsetTop
+                        })
                     }
                 }
             }
@@ -51,6 +61,38 @@ searchBtn.addEventListener('click', e => {
         .catch(error => {
             console.log('Error:', error);
         });
+    } 
+})
+
+searchBtn.addEventListener('click', e => {
+    fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        if (searchBar.focus && searchBar.value !== '') {
+            let searchResult = false;
+            for (const key in data) {
+                const element = data[key];
+                if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
+                    searchResult = true;
+                    window.scrollTo({
+                        top: recipeSection.offsetTop
+                    })
+                } else if (!searchResult && key == Object.keys(data).length - 1) {
+                    searchContainer.style.gridTemplateColumns = 'repeat(var(--recipe-size))';
+                    searchContainer.innerHTML = '<img id="no-result-img" src="https://cdn-icons-png.flaticon.com/512/6134/6134065.png">No Results Found';
+                    // searchContainer.style.minHeight = '100vh';
+                    searchTitle.classList.remove('hide');
+                    searchContainer.classList.remove('hide');
+                    window.scrollTo({
+                        top: recipeSection.offsetTop
+                    })
+                }
+            }
+        }
+    })
+    .catch(error => {
+        console.log('Error:', error);
+    });
 })
 
 fetch('data.json')
