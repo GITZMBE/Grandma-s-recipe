@@ -133,8 +133,10 @@ main {
 
 #searched-container {
     display: grid;
+    justify-content: center;
     /* grid-template-columns: repeat(var(--recipe-size)); */
     font-size: 3rem;
+    line-height: auto;
 }
 
 /* #searched-container:not(.hide) {
