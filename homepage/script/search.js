@@ -20,7 +20,7 @@ searchBar.addEventListener('focus', () => {
 searchBtn.addEventListener('click', scrollDown);
 
 function findSearch() {
-    fetch('data.json')
+    fetch('./data/data.json')
         .then(response => response.json())
         .then(data => {
             if (searchBar.focus && searchBar.value !== '') {

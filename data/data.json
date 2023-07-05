@@ -1,0 +1,26 @@
+{
+    "0": {
+        "meal": "Hamburger",
+        "description": "A sandwich consisting of a cooked meat patty on a bun or roll.",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
+        "ingredients": ["Bun", "Meat"]
+    },
+    "1": {
+        "meal": "Pasta",
+        "description": "A collective name for a category of food made from wheat flour and water, sometimes with egg. The name refers to the resulting dough (pasta also means “dough”) that is rolled out and cut into various shapes. Pasta is cooked in water and served with a sauce.",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
+        "ingredients": ["Pasta", "Water"]
+    },
+    "2": {
+        "meal": "Pizza",
+        "description": "A dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature.",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
+        "ingredients": ["Dough", "Tomato sauce", "Cheese"]
+    },
+    "3": {
+        "meal": "Hamburger",
+        "description": "A sandwich consisting of a cooked meat patty on a bun or roll.",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
+        "ingredients": ["Bun", "Meat"]
+    }
+} 

@@ -65,7 +65,7 @@ function createBeerRecipe(url) {
     }
 }
 function createHomeMadeContent() {
-    fetch('data.json')
+    fetch('./data/data.json')
     .then(response => response.json())
     .then(data => {
         for(const key in data) {
@@ -79,6 +79,7 @@ function createHomeMadeContent() {
 export function createCustomRecipe(data, container) {
     let mealContainer = document.createElement('div');
     mealContainer.classList.add('recipe-container');
+    mealContainer.addEventListener('click', e => moreInfo(data));
     container.append(mealContainer);
 
     let img = document.createElement('img');
@@ -113,4 +114,9 @@ randomBtn.addEventListener('click', e => {
     randomRenderAmount += 3;
     randomRecipesContainer.innerHTML = '';
     createRandomRecipe(foodUrl);
-})
+});
+
+function moreInfo(data) {
+    window.location.href = './tabs/Info.html';
+    sessionStorage.setItem('data', JSON.stringify(data));
+}

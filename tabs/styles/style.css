@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Bebas Neue;
+}
+
+:root {
+    --header-height: 10vh;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body,
+html {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 3rem;
+    background-color: #fff;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+}
+
+header > img,
+header > svg {
+    width: 3.5rem;
+    background-color: #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: calc(100vh - var(--header-height)) 100vh;
+    grid-template-areas: 'description dish-img'
+                         'ingredients recipe';
+    width: 100%;
+}
+
+.description-container {
+    padding: 1rem;
+}
+
+.description-container > h2 {
+    font-size: 3rem;
+}
+
+.img-container {
+    padding: 1rem;
+}
+
+.img-container > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.ingredient-container {
+    padding: 1rem;
+}
+
+.ingredient-container > h2 {
+    font-size: 3rem;
+}
+
+.ingredient-container > ol {
+    padding-left: 1rem;
+}
+
+.ingredient-container > ol > li {
+    font-size: 1.5rem;
+}
+
+.recipe-container {
+    padding: 1rem;
+}
+
+.recipe-container > h2 {
+    font-size: 3rem;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 100vw auto auto;
+        grid-template-areas: 'description'
+                             'dish-img'
+                             'ingredients'
+                             'recipe';
+    }
+
+    .img-container > img {
+        border-radius: 50%; 
+    }
+}
