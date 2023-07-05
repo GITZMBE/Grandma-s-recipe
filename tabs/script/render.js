@@ -41,7 +41,15 @@ function renderSite() {
     recipeContainer.classList.add('recipe-container');
     const recipeTitle = document.createElement('h2');
     recipeTitle.textContent = `Recipe`;
-    recipeContainer.append(recipeTitle);
+    const steps = document.createElement('ol');
+    data.recipe.forEach(element => {
+        const step = document.createElement('li');
+        step.textContent = element;
+        steps.append(step);
+    })
+    recipeContainer.append(recipeTitle, steps);
 
     main.append(descriptionContainer, imgContainer, ingredientContainer, recipeContainer);
 }
+
+

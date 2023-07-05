@@ -23,6 +23,7 @@ header {
     display: flex;
     width: 100%;
     height: var(--header-height);
+    min-height: 5rem;
     padding: 0 3rem;
     background-color: #fff;
     align-items: center;
@@ -86,6 +87,17 @@ main {
 
 .recipe-container > h2 {
     font-size: 3rem;
+}
+
+.recipe-container > ol {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-left: 1rem;
+}
+
+.recipe-container > ol > li {
+    font-size: 1.25rem;
 }
 
 

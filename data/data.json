@@ -3,24 +3,28 @@
         "meal": "Hamburger",
         "description": "A sandwich consisting of a cooked meat patty on a bun or roll.",
         "image": "https://source.unsplash.com/random/1920x1080/?",
-        "ingredients": ["Bun", "Meat"]
+        "ingredients": ["Bun", "Meat"],
+        "recipe": ["Use Ground Chuck Beef(80/20). Grind your own or buy it ground, but 20% fat is ideal and keep it refrigerated until you’re ready to use it.", "Don’t overwork your meat this will make it tough and dense.", "Shape the patties 1” wider than the bun since they shrink on the grill.", "Make an indentation in the center to prevent it from plumping up in the center.", "Don’t Season too early – Salt changes the structure of proteins and toughens burgers so don’t season your ground beef until you have formed your patties and are ready to grill.", "Get a good Sear – Once on the grill, let patties brown and sear well (3-5 min) before flipping, and do not press down on the burger save that for making Smash Burgers."]
     },
     "1": {
         "meal": "Pasta",
         "description": "A collective name for a category of food made from wheat flour and water, sometimes with egg. The name refers to the resulting dough (pasta also means “dough”) that is rolled out and cut into various shapes. Pasta is cooked in water and served with a sauce.",
         "image": "https://source.unsplash.com/random/1920x1080/?",
-        "ingredients": ["Pasta", "Water"]
+        "ingredients": ["Pasta", "Water"],
+        "recipe": ["In a large pot, bring water to a boil. Stir in the salt until dissolved.", "Add the pasta to the water, stir a few times to prevent the noodles from sticking together.", "Cook according to package directions, stirring occasionally, until al dente or softer depending on desired texture.", "Drain and toss with desired sauce. If using the pasta in a salad, add to a colander and rinse with cold water for about 1 minute, stirring until cooled down."]
     },
     "2": {
         "meal": "Pizza",
         "description": "A dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature.",
         "image": "https://source.unsplash.com/random/1920x1080/?",
-        "ingredients": ["Dough", "Tomato sauce", "Cheese"]
+        "ingredients": ["Dough", "Tomato sauce", "Cheese"],
+        "recipe": ["Make the base: Put the flour into a large bowl, then stir in the yeast and salt. Make a well, pour in 200ml warm water and the olive oil and bring together with a wooden spoon until you have a soft, fairly wet dough. Turn onto a lightly floured surface and knead for 5 mins until smooth. Cover with a tea towel and set aside. You can leave the dough to rise if you like, but it’s not essential for a thin crust.", "Make the sauce: Mix the passata, basil and crushed garlic together, then season to taste. Leave to stand at room temperature while you get on with shaping the base.", "Roll out the dough: if you’ve let the dough rise, give it a quick knead, then split into two balls. On a floured surface, roll out the dough into large rounds, about 25cm across, using a rolling pin. The dough needs to be very thin as it will rise in the oven. Lift the rounds onto two floured baking sheets.", "Top and bake: heat the oven to 240C/220C fan/gas 8. Put another baking sheet or an upturned baking tray in the oven on the top shelf. Smooth sauce over bases with the back of a spoon. Scatter with cheese and tomatoes, drizzle with olive oil and season. Put one pizza, still on its baking sheet, on top of the preheated sheet or tray. Bake for 8-10 mins until crisp. Serve with a little more olive oil, and basil leaves if using. Repeat step for remaining pizza."]
     },
     "3": {
         "meal": "Hamburger",
         "description": "A sandwich consisting of a cooked meat patty on a bun or roll.",
         "image": "https://source.unsplash.com/random/1920x1080/?",
-        "ingredients": ["Bun", "Meat"]
+        "ingredients": ["Bun", "Meat"],
+        "recipe": ["Use Ground Chuck Beef(80/20). Grind your own or buy it ground, but 20% fat is ideal and keep it refrigerated until you’re ready to use it.", "Don’t overwork your meat this will make it tough and dense.", "Shape the patties 1” wider than the bun since they shrink on the grill.", "Make an indentation in the center to prevent it from plumping up in the center.", "Don’t Season too early – Salt changes the structure of proteins and toughens burgers so don’t season your ground beef until you have formed your patties and are ready to grill.", "Get a good Sear – Once on the grill, let patties brown and sear well (3-5 min) before flipping, and do not press down on the burger save that for making Smash Burgers."]
     }
-} 
+}
