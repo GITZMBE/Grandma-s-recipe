@@ -75,7 +75,7 @@
         "meal": "Julbröd från Österlen",
         "query": "",
         "description": "En riktig klassiker som är ett måste på julbordet hos oss. Lille julaftons kväll när skinkan tagits ur ugnen lägger vi en ljummen skinkskiva på nygräddat julbröd, toppar med en stark grovmalen senap och känner julstämningen komma smygande. Receptet ger 3 limpor.",
-        "image": "../img/julbrod.jpg",
+        "image": "./img/julbrod.jpg",
         "ingredients": ["3 dl svagdricka", "5 dl rågmjöl", "75 g jäst", "5 dl mjölk", "18 dl vetemjöl", "3 dl mörk sirap", "1 msk salt", "3 msk Österlenkryddors"],
         "recipe": ["Koka upp svagdrickan och häll den het över rågmjölet. Arbeta samman till en deg som får vila i en täckt bunke över natten.", "Brödkrydda eller lika delar fänkåls-, kummin- och korianderfrön stötta i mortel", "Smula sönder jästen i bunken med den skållade degen.", "Värm mjölken fingervarm och häll över.", "Tillsätt knappt hälften av mjölet och arbeta till en slät deg som får jäsa 30 min.", "Rör ner sirap, salt och kryddor. Arbeta in resten av mjölet.", "Dela degen i tre delar och forma varje del till en limpa. Låt de utbakade limporna jäsa till dubbel storlek, ca 40 min.", "Nagga och grädda i 200 grader ca 45 min.", "Pensla med vatten några gånger under gräddningen."]
     },
