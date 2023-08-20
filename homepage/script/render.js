@@ -83,7 +83,7 @@ export function createCustomRecipe(data, container) {
     container.append(mealContainer);
 
     let img = document.createElement('img');
-    img.src = data.image + data.meal;
+    img.src = data.image + data.query;
     img.classList.add('dish-img');
 
     let title = document.createElement('h3');

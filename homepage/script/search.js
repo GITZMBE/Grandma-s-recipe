@@ -28,7 +28,7 @@ function findSearch() {
                 let searchResult = false;
                 for (const key in data) {
                     const element = data[key];
-                    if (element.meal == capitalize(searchBar.value) && data.hasOwnProperty(key)) {
+                    if (element.meal.toLowerCase().includes(searchBar.value.toLowerCase())) {
                         searchResult = true;
                         searchContainer.style.gridTemplateColumns = 'repeat(auto-fill, var(--recipe-size))';
                         searchContainer.style.minHeight = '';

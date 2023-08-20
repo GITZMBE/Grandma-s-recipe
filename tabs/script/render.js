@@ -20,7 +20,7 @@ function renderSite() {
     imgContainer.style.gridArea = 'dish-img';
     imgContainer.classList.add('img-container');
     const img = document.createElement('img');
-    img.src = `${data.image}${data.meal}`;
+    img.src = `${data.image}${data.query}`;
     imgContainer.append(img);
 
     const ingredientContainer = document.createElement('div');
