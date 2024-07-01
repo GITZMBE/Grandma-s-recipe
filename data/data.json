@@ -3,7 +3,7 @@
         "meal": "Sandhamnssoppa",
         "query": "Fish soup",
         "description": "Denna soppa skapades för 50 år sedan av Tore Wretman som också var seglare. Han gjorde soppan i samband med att KSSS, Kungl. Svenska Segel Sällskapet, fyllde 125 år. DENNA SOPPAN VAR GODARE ÄN GOTT!",
-        "image": "https://source.unsplash.com/random/1920x1080/?soup",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["1 kg fisk (filead vikt ca 1/2 kg) t.ex. abborre, flundra, gädda, gös, sik", "1 bit rotselleri", "2 små purjolökar 4 morötter olivolja till stekning timjan", "rosmarin", "ca 1/2 liter hönsbuljong eller fiskbuljong", "1-2 dl vispgrädde citronsaft", "dill, hackad", "persilja, hackad basilika", "salt", "peppar från kvarn"],
         "recipe": ["Strimla rotselleri, purjo och morötter.", "Fräs strimlorna i olivolja i en gryta utan att de tar färg.", "Tillsätt timjan och rosmarin, färsk eller torkad och smulad.", "Häll i buljongen och grädden.", "Låt koka några minuter.", "Skär fiskfiléerna i cirka 2 cm breda strimlor.", "Lägg ner fisken och låt den koka endast några minuter tills den är klar.", "Smaka av med salt, peppar och citronsaft.", "Strö rikligt med hackad persilja, dill och basilika över soppan.", ""]
     },
@@ -11,7 +11,7 @@
         "meal": "Stekta abborrfileer med tomat och dragon",
         "query": "cooked perch",
         "description": "Underbart god abborrefileer som du bara måste test!",
-        "image": "https://source.unsplash.com/random/1920x1080/?filé",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["600 g abborrfiléer grovt rågmjöl smör till stekning", "2-3 dl vispgrädde", "2 tomater, urkärnade och skurna i små tärningar", "2 msk dragon, hackad", "1 dl persilja, hackad", "dill", "salt", "peppar från kvarn"],
         "recipe": ["Vänd abborrfiléerna i rågmjöl smaksatt med salt och peppar.", "Stek dem i smör, någon minut på varje sida.", "Lägg upp filéerna på ett serveringsfat.", "Slå grädden i pannan och låt den koka till simmig konsistens.", "Lägg i tomattärningar, dragon och persilja.", "Smaka av med salt och peppar.", "Slå såsen över en del av fisken, täck inte hela filéerna, stekytan ska vara synlig.", "Dekorera med dill och servera med potatis."]
     },
@@ -19,7 +19,7 @@
         "meal": "LYXIG LAXI LAXASK - Min lyxiga laxpudding (med rökt lax)",
         "query": "cooked salmon",
         "description": "Jodå, jag vet nog att det kan se ut som rena överdådet att lägga färskrökt lax bland potatisskivorna i en laxpudding. Min ursäkt, om det behövs någon, är helt enkelt att det blir så sagolikt gott, många strån vassare än det blir med den vanliga salta laxen (annars inget ont om den). Så är det med den saken. 4-6 portioner",
-        "image": "https://source.unsplash.com/random/1920x1080/?salmon",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["300 g färskrökt lax i skivor", "10 medelstora potatisar, ca 750 g", "1/2 tsk salt", "3 ägg", "4 dl kaffegrädde", "1/2 tsk Aromat", "2 msk smör", "100 g smör", "1 knippa dill, finhackad"],
         "recipe": ["Skala potatisen och skär den i skivor.", "Varva potatis och lax i en smord ugnssäker form med höga kanter. Salta lätt på potatisen. Understa och översta lagret ska vara potatis.", "Vispa samman ägg och grädde. Smaksätt med Aromat och häll blandningen i formen. Lägg på några smörklickar och grädda i 175° ugn 50-60 minuter.", "Skira smöret: smält det i en kastrull och slå över det i en annan. se till att bottensatsen inte kommer med. Blanda i dillen och servera dillsmöret till laxpuddingen."]
     },
@@ -27,7 +27,7 @@
         "meal": "Västerbotten Paj med Löjrom",
         "query": "Pie",
         "description": "Västerbottenpaj förknippas ofta med kröftskiva men gör förstås bra att bjuda på även vid andra tillfällen. Här toppas den med löjrom och cr\u00E9me fraiche.",
-        "image": "https://source.unsplash.com/random/1920x1080/?pie",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["3 dl vetemjöl", "125 g smör", "1 msk kallt vatten", "225 g västerbottensost", "3 ägg", "1 dl matlagningsgrädde", "1 krm salt", "1 krm nymald svartpeppar", "1 dl cr\u00E9me fraiche", "100 g löjrom", "cca 10 gräslöksstrån", "2 krm nymald svartpeppar"],
         "recipe": ["Hacka ihop mjöl och smör, gärna i matberedare. Tillsätt vattnet och blanda hastigt ihop till en deg. Tryck ut den i en pajform, ca 24 cm i diameter, gärna med löstagbar kant. Ställ pajskalet kallt ca 15 minuter. Sätt ugnen på 225°.", "Nagga och förgrädda pajskalet mitt i ugnen ca 10 minuter.", "Fyllning: Riv osten grovt. Vispa ihop ägg och grädde. Salta, peppra och blanda i osten.", "Bred ut ostblandningen i paj- skalet. Grädda mitt i ugnen ca 20 minuter, tills ytan fått fin färg. Låt svalna.", "Garnera med klickar av crème fraiche, löjrom, gräslöksstrån och peppar."]
     },
@@ -35,7 +35,7 @@
         "meal": "Kaffe eller Te bröd i hast",
         "query": "Danish bread",
         "description": "Kaffebröd är bakverk, i synnerhet söta sådana, som äts till dryck. Kaffebröd kan vara mjukt eller hårt och bakat med jäst eller bakpulver. Fikabröd är en synonym som förekommer efter att ordet fika blivit folkligt i Sverige.",
-        "image": "https://source.unsplash.com/random/1920x1080/?bread",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["1 ägg", "1 kkp socker", "1 kkp gräddmjölk", "2 tsk bakpulver", "2 kkp mjöl", "2 droppar sedro"],
         "recipe": ["Allt sammanvispas hastigt och gräddas i stekpanna under 10 min i het ugn.", "skäres varm i sneda rutor som smaka bäst varma"]
     },
@@ -43,7 +43,7 @@
         "meal": "Banankaka",
         "query": "Banana cake",
         "description": "Passa på att baka den amerikanska favoriten banana bread när du har bananer hemma som börjar bli väl mogna. Ljuvligt god och saftig banankaka med smak av kanel.",
-        "image": "https://source.unsplash.com/random/1920x1080/?cake",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["2-3 bananer", "100 g smör eller margarin", "2 dl socker", "2 ägg", "4 dl vetemjöl", "1 tsk bikarbonat", "1 tsk bakpulver", "1 tsk vanilisocker", "1 dl gräddfil eller filmjölk"],
         "recipe": ["Sätt ugnen på 175 grader. Smörj och bröa en bakform, 1 1/2-2 liter.", "Skala bananerna och dela i mindre bitar.", "Dela Margarinet i 5-6 bitar.", "Lägg bananer, margarin och socker i matberedare med stålkniv och kör till en pösig Smet.", "Tillsätt ovriga ingredienser och blanda till en, slät smet. Häll smeten i formen. Grädda i nedre delen av ugnen ca 50 min.", "Låt kakan svalna lite innan den stjälps upp."]
     },
@@ -51,7 +51,7 @@
         "meal": "Emmys Sullar",
         "query": "buns",
         "description": "Sockrade vaniljbullar som är otroligt saftiga. Baka och du kommer inte att bli besviken!",
-        "image": "https://source.unsplash.com/random/1920x1080/?bun",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["2 dl", "mjölk 37\u02DA", "50 g jäst", "100g margarin (smält)", "2 äggulor", "1 tsk salt", "1 msk socker", "400g mjöl"],
         "recipe": ["blanda knåda gör bullar 50-60 g/st Jäs 20 min på plåt", "225° ca 8 min mitt i ugn."]
     },
@@ -59,7 +59,7 @@
         "meal": "Ingegärds bullar",
         "query": "bread rolls",
         "description": "Blir till ca 38 st.",
-        "image": "https://source.unsplash.com/random/1920x1080/?bun",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["1 L vatten", "5 dl fibergryn", "1 tsk salt", "3 msk honung", "2 pkt jäst", "2 L vetemjöl", "100 g smält margarin"],
         "recipe": ["Blanda samman vattnet och fibergrynet och låt stå under natten", "Rulla bullarna direkt!", "Blanda dagen efter i resten av ingredienserna. Plasta plåten och låt stå och jäsa i ca 30 min", "Sätt in i ugnen på 250\u02DA", "Pensla inte bullarna!"]
     },
@@ -67,7 +67,7 @@
         "meal": "Hawanikyckling med senapsgrädde",
         "query": "Cooked chicken",
         "description": "Ingegärds recept. 250° 10-15 minuter. 4-6 port.",
-        "image": "https://source.unsplash.com/random/1920x1080/?chicken",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["2 grillade kycklingar ca 700 gram", "1 Burk ananas i skivor ca 400 g", "2 dl vispgrädde", "1-2 msk senap", "1 äggula"],
         "recipe": ["Sätt ugnen på 250°.", "Dela kycklingarna i bitar (4 delar).", "Låt ananasen rinna av.", "Lägg den på ett smort, ugnssäkert fat.", "Lägg kycklingbitarna på ananasen.", "Vispa grädden och blanda den med senap och äggula.", "Bred senapsgrädden över kycklingen", "Gratinera i ugnen 10-15 minuter tills rätten blivit genomvarm och fått färg.", "Servera med sallad. Risotto blir säkert också gott till!"]
     },
@@ -83,7 +83,7 @@
         "meal": "Lavendelkakor",
         "query": "lavendel cookie",
         "description": "Ett recept med rötter i England, som ju har gamla traditioner när det gäller lavendel. Det är ljuvliga kakor som smälter i munnen. Utmärkta tillbehör till en fin dessert.",
-        "image": "https://source.unsplash.com/random/1920x1080/?cookies",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["250 g smör", "2 1⁄2 dl strösocker", "2 ägg", "2 msk torkade lavendelblommor", "5 dl vetemjöl", "2 tsk bakpulver"],
         "recipe": ["Rör smör och socker ljust och fluffigt.", "Tillsätt äggen ett i taget och blanda väl.", "Tillsätt lavendelblommorna och mjölet blandat med bakpulvret.", "Klicka ut 60 kakor på ett bakplåtspapper. Ge dem plats, för kakorna flyter ut vid gräddningen.", "Grädda i 175 grader ca 20 minuter."]
     },
@@ -91,7 +91,7 @@
         "meal": "Myntasnittar",
         "query": "mint cookie",
         "description": "Favoriten i butiken vågar vi säga om våra myntasnittar. Choklad och mynta är en oslagbar kombination",
-        "image": "https://source.unsplash.com/random/1920x1080/?cookies",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["200 g smör", "2 1⁄2 dl strösocker", "5 dl vetemjöl", "4 msk kakao", "1 tsk bakpulver", "1 msk vaniljsocker", "1 ägg", "2 msk torkad pepparmynta"],
         "recipe": ["Stöt pepparmyntan i mortel.", "Blanda alla ingredienser till en deg.", "Dela degen i fem delar. Rulla varje del till en rulle, lika lång som plåten.", "Platta till rullarna och grädda i 175 grader ca 20 minuter.", "Skär längderna i sneda bitar när de fortfarande är varma."]
     },
@@ -99,7 +99,7 @@
         "meal": "Österlenkryddors lavendelsockerkaka",
         "query": "sugar cookie",
         "description": "Ett riktigt släktrecept. När min mors moster, Brita, hjälpte sin farmor, Bolla, att vispa denna sockerkaka fick hon vasen på bilden som tack. Ursprungligen var receptet på tio ägg och kakan skulle vispas minst en halv timme, så nog kunde det behövas hjälp. Vi har här halverat receptet för att passa vår tids kakformar. Lavendelblommorna är också vårt påfund, men de finner sig väldigt väl tillrätta i farmor Bollas sockerkaka. Vi strör ibland formen med blått vallmofrö istället för ströbröd. Det ger en vacker kaka och en god nötig smak.",
-        "image": "https://source.unsplash.com/random/1920x1080/?cake",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["5 ägg", "3 dl strösocker", "1/2 tsk ättiksprit", "1 1⁄2 msk torkade lavendelblommor", "3 dl vetemjöl"],
         "recipe": ["Vispa ägg och socker i ca 15 minuter så att smeten blir riktigt vit och pösig.", "Blanda ner ättika och lavendel.", "Sikta ner mjölet och blanda försiktigt.", "Häll smeten i en smord och bröad sockerkaksform på två liter.", "Grädda i 175 grader ca 55 minuter."]
     },
@@ -107,7 +107,7 @@
         "meal": "Smördegsinbakad äppelkompott",
         "query": "apple cake",
         "description": "4 PERSONER. färdigkavlad smördeg",
-        "image": "https://source.unsplash.com/random/1920x1080/?compote",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["2-3 fasta äpplen", "1 msk smör", "ca 1/2 dl sirap", "50 g nötter, hackade, eller flagad mandel", "ca 50 g mandelmassa, grovt riven", "1 ägg", "glass"],
         "recipe": ["Skala, kärna ur och klyfta äpplena. Fräs äppelklyftorna i smör och tillsätt sirapen. Småkoka tills äpplena känns mjuka, och lagen som bildats blivit tjockflytande.", "Värm ugnen till 225°.", "Ta ut 4 rundlar av den färdiga smördegen, cirka 12 cm i diameter, och lägg dem på en plåt med bakplåtspapper.", "Lägg avsvalnad äppelkompott som fyllning på ena halvan av varje smördegsrundel.", "Strö över nötter eller mandel och mandelmassa.", "Pensla kanterna med uppvispat ägg och vik ihop rundlarna till halvmånar.", "Pensla med ägg och strö på lite nötter eller mandel.", "Grädda i ugnen tills de har fått vacker färg. Kolla undersidan så att degen är ordentligt bakad.", "Servera med glass."]
     },
@@ -115,7 +115,7 @@
         "meal": "Hamburger",
         "query": "Hamburger",
         "description": "A sandwich consisting of a cooked meat patty on a bun or roll.",
-        "image": "https://source.unsplash.com/random/1920x1080/?hamburger",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["Bun", "Meat"],
         "recipe": ["Use Ground Chuck Beef(80/20). Grind your own or buy it ground, but 20% fat is ideal and keep it refrigerated until you’re ready to use it.", "Don’t overwork your meat this will make it tough and dense.", "Shape the patties 1” wider than the bun since they shrink on the grill.", "Make an indentation in the center to prevent it from plumping up in the center.", "Don’t Season too early – Salt changes the structure of proteins and toughens burgers so don’t season your ground beef until you have formed your patties and are ready to grill.", "Get a good Sear – Once on the grill, let patties brown and sear well (3-5 min) before flipping, and do not press down on the burger save that for making Smash Burgers."]
     },
@@ -123,7 +123,7 @@
         "meal": "Pasta",
         "query": "Pasta",
         "description": "A collective name for a category of food made from wheat flour and water, sometimes with egg. The name refers to the resulting dough (pasta also means “dough”) that is rolled out and cut into various shapes. Pasta is cooked in water and served with a sauce.",
-        "image": "https://source.unsplash.com/random/1920x1080/?pasta",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["Pasta", "Water"],
         "recipe": ["In a large pot, bring water to a boil. Stir in the salt until dissolved.", "Add the pasta to the water, stir a few times to prevent the noodles from sticking together.", "Cook according to package directions, stirring occasionally, until al dente or softer depending on desired texture.", "Drain and toss with desired sauce. If using the pasta in a salad, add to a colander and rinse with cold water for about 1 minute, stirring until cooled down."]
     },
@@ -131,7 +131,7 @@
         "meal": "Pizza",
         "query": "Pizza",
         "description": "A dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature.",
-        "image": "https://source.unsplash.com/random/1920x1080/?pizza",
+        "image": "https://source.unsplash.com/random/1920x1080/?",
         "ingredients": ["Dough", "Tomato sauce", "Cheese"],
         "recipe": ["Make the base: Put the flour into a large bowl, then stir in the yeast and salt. Make a well, pour in 200ml warm water and the olive oil and bring together with a wooden spoon until you have a soft, fairly wet dough. Turn onto a lightly floured surface and knead for 5 mins until smooth. Cover with a tea towel and set aside. You can leave the dough to rise if you like, but it’s not essential for a thin crust.", "Make the sauce: Mix the passata, basil and crushed garlic together, then season to taste. Leave to stand at room temperature while you get on with shaping the base.", "Roll out the dough: if you’ve let the dough rise, give it a quick knead, then split into two balls. On a floured surface, roll out the dough into large rounds, about 25cm across, using a rolling pin. The dough needs to be very thin as it will rise in the oven. Lift the rounds onto two floured baking sheets.", "Top and bake: heat the oven to 240C/220C fan/gas 8. Put another baking sheet or an upturned baking tray in the oven on the top shelf. Smooth sauce over bases with the back of a spoon. Scatter with cheese and tomatoes, drizzle with olive oil and season. Put one pizza, still on its baking sheet, on top of the preheated sheet or tray. Bake for 8-10 mins until crisp. Serve with a little more olive oil, and basil leaves if using. Repeat step for remaining pizza."]
     }
