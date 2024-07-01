@@ -82,8 +82,10 @@ export function createCustomRecipe(data, container) {
     mealContainer.addEventListener('click', e => moreInfo(data));
     container.append(mealContainer);
 
+    console.log(data)
     let img = document.createElement('img');
-    img.src = data.image + data.query;
+    const src = data.image + data.query
+    img.src = src.toLowerCase();
     img.classList.add('dish-img');
 
     let title = document.createElement('h3');
